@@ -12,6 +12,10 @@ class UpaUrl < Formula
     system "cmake", "-S", ".", "-B", "build", "-DUPA_BUILD_TESTS=OFF", "-DBUILD_SHARED_LIBS=ON", *std_cmake_args
     system "cmake", "--build", "build"
     system "cmake", "--install", "build"
+
+    system "cmake", "-S", ".", "-B", "build-static", "-DUPA_BUILD_TESTS=OFF", *std_cmake_args
+    system "cmake", "--build", "build-static"
+    lib.install "build-static/libupa_url.a"
   end
 
   test do
