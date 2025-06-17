@@ -6,6 +6,13 @@ class UpaUrl < Formula
   license "BSD-2-Clause"
   head "https://github.com/upa-url/upa.git", branch: "main"
 
+  bottle do
+    root_url "https://github.com/upa-url/homebrew-tap/releases/download/upa-url-2.2.0"
+    sha256 cellar: :any,                 arm64_sequoia: "da3e98e6aaff1f37de3ebd46d6c5653ebbb46eba6c824ebc707f8186190eb2ec"
+    sha256 cellar: :any,                 ventura:       "1850793ce6171943d6685a270f1a89fee34081b791a4c3d7db6aca791e470c2f"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "219992f6d9ea8676405a82ede064688440c42e8666a5ba1691220201c54b936c"
+  end
+
   depends_on "cmake" => :build
 
   def install
