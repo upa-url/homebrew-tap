@@ -7,10 +7,10 @@ class UpaUrl < Formula
   head "https://github.com/upa-url/upa.git", branch: "main"
 
   bottle do
-    root_url "https://github.com/upa-url/homebrew-tap/releases/download/upa-url-2.2.0"
-    sha256 cellar: :any,                 arm64_sequoia: "da3e98e6aaff1f37de3ebd46d6c5653ebbb46eba6c824ebc707f8186190eb2ec"
-    sha256 cellar: :any,                 ventura:       "1850793ce6171943d6685a270f1a89fee34081b791a4c3d7db6aca791e470c2f"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "219992f6d9ea8676405a82ede064688440c42e8666a5ba1691220201c54b936c"
+    root_url "https://github.com/upa-url/homebrew-tap/releases/download/upa-url-2.3.0"
+    sha256 cellar: :any,                 arm64_sequoia: "9223bf89cc4c452c90b8b5ed01748879a061b943ed9315b16e24037a822d64c9"
+    sha256 cellar: :any,                 ventura:       "6acce2e764d4cec9d30c75a496c9aad8594520bdf78892cea8448a6d14861063"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "23f99a32ee92daf44ad7d0aed236fae42f8381d633b34078146b4c0089945e68"
   end
 
   depends_on "cmake" => :build
