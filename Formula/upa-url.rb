@@ -1,8 +1,8 @@
 class UpaUrl < Formula
   desc "WHATWG URL Standard compliant URL parser library written in C++"
   homepage "https://upa-url.github.io/docs/"
-  url "https://github.com/upa-url/upa/archive/refs/tags/v2.3.0.tar.gz"
-  sha256 "707b487534c1cb2be6bc180249b6c0fd7947758a4bca76754c0afdbda462bdba"
+  url "https://github.com/upa-url/upa/archive/refs/tags/v2.4.0.tar.gz"
+  sha256 "97a7ddf56c8b65e8b54027d01acfb4fe7b2f0f1f16ce5023d12ce5a5539718ff"
   license "BSD-2-Clause"
   head "https://github.com/upa-url/upa.git", branch: "main"
 
