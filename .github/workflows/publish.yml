@@ -41,6 +41,6 @@ jobs:
           fi
 
       - name: Push commits
-        uses: Homebrew/actions/git-try-push@1f8e202ffddf94def7f42f6fa3a482e821489f9c # 2026.07.10.1
+        uses: Homebrew/actions/git-try-push@c8707045ccae42888fe98e86f2ee8938bc7cc193 # 2026.08.10.1
         with:
           branch: main
